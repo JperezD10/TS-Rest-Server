@@ -24,7 +24,7 @@ class Server{
             await db.authenticate();
             console.log("Conexion establecida");
         } catch (error) {
-            throw new Error(`Ha ocurrido un problema ${error}`);
+            throw new Error(`Ha ocurrido un problema ${error}`); 
         }
     }
 

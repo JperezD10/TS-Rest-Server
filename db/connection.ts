@@ -1,14 +1,8 @@
 import {Sequelize} from 'sequelize';
 
-const db = new Sequelize({
-    dialect: 'mssql',
-    dialectModulePath: 'sequelize-msnodesqlv8',
-    dialectOptions: {
-      instanceName: 'SQLEXPRESS',
-      trustedConnection: true
-    },
-    host: 'localhost',
-    database: 'NodeTS'
+const db = new Sequelize('nodets', 'root', 'Freya2205',{
+  host: 'localhost',
+  dialect: 'mysql'
 });
 
 export default db;

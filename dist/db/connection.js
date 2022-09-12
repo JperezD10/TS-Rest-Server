@@ -1,15 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const sequelize_1 = require("sequelize");
-const db = new sequelize_1.Sequelize({
-    dialect: 'mssql',
-    dialectModulePath: 'sequelize-msnodesqlv8',
-    dialectOptions: {
-        instanceName: 'SQLEXPRESS',
-        trustedConnection: true
-    },
+const db = new sequelize_1.Sequelize('nodets', 'root', 'Freya2205', {
     host: 'localhost',
-    database: 'NodeTS'
+    dialect: 'mysql'
 });
 exports.default = db;
 //# sourceMappingURL=connection.js.map
